@@ -41,9 +41,6 @@ struct ViewerScreen: View {
         }
         .navigationTitle("home_navigation_title")
         .navigationBarTitleDisplayMode(.inline)
-//        .toolbarBackground(Color.agileContentColor, for: .navigationBar)
-//        .toolbarBackground(.visible, for: .navigationBar)
-//        .toolbarColorScheme(.dark, for: .navigationBar)
         .padding()
         .onChange(of: viewerViewModel.state) { newValue in
             if case .success(let user) = newValue {
